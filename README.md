@@ -1,6 +1,6 @@
 # Summary
-This project is the minimal setup required to reproduce the issue raised in https://github.com/firebase/firebase-js-sdk/issues/5384 \
-It was created with [Create React App](https://github.com/facebook/create-react-app).\
+This project is the minimal setup required to reproduce the issue raised in https://github.com/firebase/firebase-js-sdk/issues/5384
+It was created with [Create React App](https://github.com/facebook/create-react-app).
 
 When running in development mode this app works correctly, however in production mode it does not.
 The relevant code is in `src\App.js`, it simply initialises a firebase app and firestore database, in production the call to `initialiseFirestore` fails with the error `TypeError: r is not a function`, swapping that out for the simpler `getFirestore` works fine.
